@@ -1,0 +1,49 @@
+{
+  "name": "Ebloc",
+  "engine": {
+    "Ethash": {
+      "params": {
+        "gasLimitBoundDivisor": "0x0400",
+        "minimumDifficulty": "0x020000",
+        "difficultyBoundDivisor": "0x0800",
+        "durationLimit": "0x0d",
+        "blockReward": "0x4563918244F40000",
+        "registrar": "0x81a4b044831c4f12ba601adb9274516939e9b8a2",
+        "homesteadTransition": "0x00",
+        "eip150Transition": "0x7fffffffffffffff",
+        "eip155Transition": "0x7fffffffffffffff",
+        "eip160Transition": "0x7fffffffffffffff",
+        "eip161abcTransition": "0x7fffffffffffffff",
+        "eip161dTransition": "0x7fffffffffffffff"
+      }
+    }
+  },
+  "params": {
+    "accountStartNonce": "0x00",
+    "maximumExtraDataSize": "0x20",
+    "minGasLimit": "0x1388",
+    "networkID": "0x5B7E",
+    "eip98Transition": "0x7fffffffffffffff"
+  },
+  "genesis": {
+    "seal": {
+      "ethereum": {
+        "nonce": "",
+        "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "difficulty": "0x400",
+    "author": "0x3333333333333333333333333333333333333333",
+    "timestamp": "0x00",
+    "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "extraData": "0x00",
+    "gasLimit": "0x3B4A1B44"
+  },
+  "accounts": {
+    "0000000000000000000000000000000000000001": { "builtin": { "name": "ecrecover", "pricing": { "linear": { "base": 3000, "word": 0 } } } },
+    "0000000000000000000000000000000000000002": { "builtin": { "name": "sha256", "pricing": { "linear": { "base": 60, "word": 12 } } } },
+    "0000000000000000000000000000000000000003": { "builtin": { "name": "ripemd160", "pricing": { "linear": { "base": 600, "word": 120 } } } },
+    "0000000000000000000000000000000000000004": { "builtin": { "name": "identity", "pricing": { "linear": { "base": 15, "word": 3 } } } },
+    "0xda1e61e853bb8d63b1426295f59cb45a34425b63": { "balance": "1000000000000000000000000000000" }
+  }
+}
